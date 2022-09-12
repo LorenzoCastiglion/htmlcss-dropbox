@@ -1,0 +1,136 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --white: white;
+    --lightblue: rgb(181, 208, 232);
+    --black: black;
+    --blu: #0061FF;
+}
+body {
+    background-color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* per inner hero e inner footer */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* min-width: ; */
+}
+/* per sections main */
+.smallercontainer {
+    max-width: 1000px;
+    margin: 150px auto;
+}
+/* header */
+header nav {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    background-color: var(--white);
+}
+
+.btn{
+    background-color: var(--blu);
+    border: none;
+    color: var(--white);
+    padding: 5px 8px;
+}
+
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+#hero {
+    background-color: var(--lightblue);
+    padding-top: 80px;
+}
+#hero .container {
+    position: relative;
+    bottom: -80px;
+}
+h1 {
+    font-size: 75px;
+    margin-bottom: 35px;
+}
+
+ul{
+    align-items: center;
+    font-size: 16px;
+    color: ;
+    margin: 0 10px;
+}
+
+li:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+li{
+    list-style: none;
+    align-items: center;
+    margin-left: 20px;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+
+.fa-arrow-down{
+    font-size: 40px;
+    
+}
+
+.header-flex {
+    display: flex;
+}
+#hero img {
+    width: 100%;
+}
+
+.flex-30{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.w30 {
+    width: 30%;
+    padding-bottom: 8%;
+}
+
+
+.btnhero{
+    width:180px;
+    height: 40px;  
+}
+
+.w70 {
+    width: 70%;
+}
+
+/* fine header */
+
+/* inizio main */
+
+
+input[type="radio"]{
+   
+
+}
+
+
+/* footer */
+footer {
+    background-color: var(--black);
+    color: var(--white);
+}
