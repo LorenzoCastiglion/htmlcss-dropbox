@@ -147,6 +147,40 @@ a:visited{
     line-height: 50px;
 }
 
+/* cards piani abbonamento */
+
+
+.card{
+    border: 1px solid var(--grey);
+    width: 30%;
+}
+
+.top-card{
+    border-bottom: 1px solid var(--grey);
+    text-align: center;
+    padding: 5%;
+}
+
+.card h4{
+    font-size: 25px;
+}
+
+.card p{
+    line-height: 30px;
+}
+
+.icone-carte{
+    display: inline-block;
+}
+
+.descrizione-carte{
+    display: inline-block;
+}
+
+#txt-card-grigio{
+    color: var(--grey);
+}
+
 
 /* Esegui più operazioni */
 
