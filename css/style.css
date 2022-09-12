@@ -123,21 +123,34 @@ a:visited{
 
 /* inizio main */
 
+.flex-cards{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+
+}
+
+
+
+
+
 
 .radio-div {
+    display: flex;
     height: 50px;
     margin-left: 10px;
 }
 .circle {
-    display: inline-block;
+    
     background-color: var(--white);
     width: 20px;
     height: 20px;
     border-radius: 50%;
     vertical-align: middle;
+    margin: 0 10px;
 }
 #checked {
-    margin-left: -10px;
+    margin-left: 10px;
     border: 5px solid var(--blu);
 }
 #non-checked {
@@ -147,13 +160,43 @@ a:visited{
     line-height: 50px;
 }
 
+.card-hr{
+    margin-right: 82%;
+    
+}
+
+.fa-check{
+    color: var(--blu);
+}
+
 /* cards piani abbonamento */
 
 
-.card{
-    border: 1px solid var(--grey);
-    width: 30%;
+.cards-container{
+    display: flex;
+    flex-flow: row wrap;
+    
 }
+
+.card{
+    font-size: 14px;
+    padding: 0 15px 100px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--grey);
+    width: calc((100% - 70px )/3);
+    height: 750px;
+}
+
+.card:nth-child(2){
+    margin: 0 35px;
+}
+
+#cardTwo{
+    padding-top: ;
+}
+
 
 .top-card{
     border-bottom: 1px solid var(--grey);
@@ -165,21 +208,54 @@ a:visited{
     font-size: 25px;
 }
 
+#cardbtn{
+    margin: 0 25px;
+    padding: 10px 0;
+}
+
 .card p{
     line-height: 30px;
-}
+} 
 
 .icone-carte{
-    display: inline-block;
+    margin-right: 8px;
 }
 
-.descrizione-carte{
-    display: inline-block;
+
+
+
+.flex-icon{
+    display: flex;
 }
 
-#txt-card-grigio{
-    color: var(--grey);
+.card-bottom{
+    margin-top: 30px;
+    width: 1000px;
+    border: 1px solid var(--grey);
 }
+
+.top-card-bottom{
+    border-bottom: 1px solid var(--grey);
+    text-align: center;
+    padding: 2%;
+}
+
+.bottom-card-flex{
+    display: flex;
+    justify-content: space-between;
+   padding: 5%; 
+}
+
+#downbtn{
+    padding: 10px 20px;
+}
+
+#soluzioni{
+    padding: 0 0 5% 5%;
+}
+
+
+
 
 
 /* Esegui più operazioni */
