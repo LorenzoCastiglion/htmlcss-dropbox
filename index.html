@@ -14,7 +14,7 @@
         <!-- fixed 100% -->
         <nav class="nav-flex">
             
-                <ul class="header-flex">
+                <ul class="d-flex">
                 <li>
                  <img src="./img/logo-small.png" alt="">
                 </li>
@@ -22,7 +22,7 @@
                 <li>Funzioni</li>
                 <li>Piani e Prezzi</li>
             </ul>
-            <ul class="header-flex">
+            <ul class="d-flex">
                 <li>Supporto</li>
                 <li>Contatta l'ufficio vendite</li>
                 <li>Accedi</li>
@@ -36,7 +36,7 @@
         <section id="hero">
             <div class="container">
                 <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
-                <div class="header-flex">
+                <div class="d-flex">
                     <div class="w30 flex-30" >
                         <p>Finalmente tutti i tuoi strumenti, contenuti e colalboratori sono accessibili dallo stesso posto. <br>
                         Dropbox Business è più di uno spazio di archiviazione sicuro: &eacute; un modo inelligente e integrato per ottimizzare il flisso di lavoro esistente.</p>
@@ -57,9 +57,16 @@
         <section id="plans" class="smallercontainer">
             <h2>Trova il piano business che fa per te</h2>
             <br>
-            <div>
-                <input type="radio" name="fattturazione" id="mese" value="mensile">
-                <input type="radio" name="fattturazione" id="anno">
+            <div class="d-flex">
+                <div class="radio-div">
+                    <div class="circle" id="checked">
+                    </div>
+                    <span>Fatturazione mensile</span> 
+                </div>
+                <div class="radio-div">
+                    <div class="circle" id="non-checked"></div>
+                    <span>Fatturazione annuale</span>
+                </div>
             </div>
             <br>
             <div class="cards">
@@ -76,15 +83,76 @@
 
     <!-- fixed 100% -->
     <footer>
-        <nav class="container">
-            <ul>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
+        <nav id="txt-foot" class="container foot-nav foot-flex">
+
+            <!-- Dropbox -->
+            <ul class="menudown">
+                <li><h3>Dropbox</h3></li>
+                <li><a href="">Applicazione desktop</a></li>
+                <li><a href="">Perch&eacute;</a></li>
+                <li><a href="">Piani</a></li>
+                <li><a href="">Sicurezza</a></li>
+                <li><a href="">Funzioni</a></li>
             </ul>
+
+
+            <!-- Prodotti -->
+            <ul>
+                <li><h3>Prodotti</h3></li>
+                <li><a href="">Applicazione desktop</a></li>
+                <li><a href="">Perch&eacute;</a></li>
+                <li><a href="">Piani</a></li>
+                <li><a href="">Sicurezza</a></li>
+                <li><a href="">Funzioni</a></li>
+            </ul>
+
+
+            <!-- azienda -->
+            <ul>
+                <li><h3>Azienda</h3></li>
+                <li><a href="">Applicazione desktop</a></li>
+                <li><a href="">Perch&eacute;</a></li>
+                <li><a href="">Piani</a></li>
+                <li><a href="">Sicurezza</a></li>
+                <li><a href="">Funzioni</a></li>
+            </ul>
+
+
+            <!-- supporto -->
+            <ul>
+                <li><h3>Supporto</h3></li>
+                <li><a href="">Applicazione desktop</a></li>
+                <li><a href="">Perch&eacute;</a></li>
+                <li><a href="">Piani</a></li>
+                <li><a href="">Sicurezza</a></li>
+                <li><a href="">Funzioni</a></li>
+            </ul>
+
+
+            <!-- community -->
+            <ul>
+                <li><h3>Community</h3></li>
+                <li><a href="">Applicazione desktop</a></li>
+                <li><a href="">Perch&eacute;</a></li>
+                <li><a href="">Piani</a></li>
+                <li><a href="">Sicurezza</a></li>
+                <li><a href="">Funzioni</a></li>
+            </ul>
+
+          
+            
         </nav>
+
+        <hr>
+
+        <div class="end-foot container">
+            <div>
+                <i class="fa-solid fa-earth-americas"></i>
+                Italiano<i class="fa-solid fa-caret-up"></i>
+            </div>
+
+        </div>
+
     </footer>
 </body>
 </html>
