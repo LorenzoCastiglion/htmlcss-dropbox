@@ -193,9 +193,9 @@ justify-content: space-around;
     margin: 0 35px;
 }
 
-#cardTwo{
+/* #cardTwo{
     padding-top: ;
-}
+} */
 
 
 .top-card{
@@ -254,7 +254,13 @@ justify-content: space-around;
     padding: 0 0 5% 5%;
 }
 
+.photo-pic{
+    flex-basis: 60%;
+}
 
+.photo-txt-flex{
+    flex-basis: 40%
+}
 
 
 
@@ -297,6 +303,22 @@ h3{
 .photo-cards p{
     margin-right: 40px;
 }
+
+/* fine sezioni piani abbonamento */
+
+/* inizio sezione photo testo */
+
+.photo-txt{
+    display: flex;
+}
+
+.photo-txt-flex{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+
 
 
 /* footer */
