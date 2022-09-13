@@ -182,11 +182,18 @@ justify-content: space-around;
     font-size: 14px;
     padding: 0 15px 100px 15px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    
     border: 1px solid var(--grey);
     width: calc((100% - 70px )/3);
-    height: 750px;
+    row-gap: 20px;
+    min-height: 750px;
+}
+
+#fix{
+    padding-bottom: 1.1em;
+    /* color: var(--white); */
 }
 
 .card:nth-child(2){
@@ -320,7 +327,7 @@ h3{
 }
 
 .photo-txt-flex p{
-    padding: 5% 0;
+    margin: 10% 0;
 }
 
 .photo-txt-flex{
@@ -329,12 +336,23 @@ h3{
 }
 
 .photo-txt-btn{
+    
+    border: 1px solid black;
     width: 55%;
-    padding: 2%;
+    padding: 3%;
+    background-color: var(--white);
+    text-decoration: none;
+    /* border-radius: 0;
+    border: 2px solid var(--grey);
+    background-color: var(--white); */
 }
 
+/* fine sezione foto testo */
 
-
+#cinque{
+    font-size: 40px;
+    margin-bottom: 8%;
+}
 
 
 /* footer */
@@ -344,15 +362,11 @@ footer {
     color: var(--white);
 }
 
-footer hr{
-margin-top: 60px;
-margin-left: 14%;
-margin-right: 75%;
-border: 1px solid var(--grey);
-}
+
 
 .foot-nav{
     padding-top: 60px;
+    margin-bottom: 100px;
 }
 
 footer ul li:first-child{
@@ -367,7 +381,10 @@ footer ul li:first-child{
 }
 
 .end-foot{
-    padding-top: 50px;
+    text-align: left;
+    width: 10%;
+    border-top: var(--grey);
+    margin: 0 0;
 
 }
 
