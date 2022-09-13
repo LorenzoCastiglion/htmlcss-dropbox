@@ -11,6 +11,7 @@
     --grey: #EDEDEE;
     --azure: #B4D0E7;
     --bordeaux: #610B2E;
+    --beige: #F5F5F5;
 }
 body {
     background-color: var(--white);
@@ -406,12 +407,36 @@ h3{
 
 /* sezione loghi */
 
+.logo-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-central-txt{
+    background-color: var(--beige);
+    width: calc(100% - 60vw);
+}
+
+.logo-container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 30vw;
+    
+    background-color: #0061FF;
+}
+
+.logo-inner{
+    width: 15vw;
+    height: 15vw;
+    background-color: #610B2E;
+}
 
 
 
 /* sezione azzurra */
 
 .blocco-azzurro{
+    
     background-color: var(--azure);
 }
 
@@ -419,6 +444,7 @@ h3{
     padding: 100px 0;
     display: flex;
     justify-content: space-between;
+    margin:auto
     
 }
 
@@ -428,6 +454,7 @@ h3{
 }
 
 #btn-azzurro{
+    text-decoration: none;
     background-color: var(--white);
     border: 1px solid var(--white);
     padding: 10px 20px ;
