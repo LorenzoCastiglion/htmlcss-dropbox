@@ -254,16 +254,6 @@ justify-content: space-around;
     padding: 0 0 5% 5%;
 }
 
-.photo-pic{
-    flex-basis: 60%;
-}
-
-.photo-txt-flex{
-    flex-basis: 40%
-}
-
-
-
 /* Esegui più operazioni */
 
 
@@ -308,15 +298,41 @@ h3{
 
 /* inizio sezione photo testo */
 
+
+.photo-pic{
+    flex-basis: 60%;
+}
+
+.photo-txt-flex{
+    flex-basis: 40%;
+}
+
+.photo-pic-img{
+    width: 100%;
+}
+
 .photo-txt{
     display: flex;
 }
 
-.photo-txt-flex{
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
+.photo-txt-flex h4{
+    font-size: 24px;
 }
+
+.photo-txt-flex p{
+    padding: 5% 0;
+}
+
+.photo-txt-flex{
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.photo-txt-btn{
+    width: 55%;
+    padding: 2%;
+}
+
 
 
 
