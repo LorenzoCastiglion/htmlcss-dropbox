@@ -94,7 +94,7 @@ ul{
 li:hover{
     text-decoration: none;
     background-color: var(--grey);
-    border-bottom: 3px solid var(--black);
+    
 
     
 }
@@ -127,6 +127,51 @@ a:visited{
    
 }
 
+ul#menu li{
+    display: block;
+    position: relative;
+}
+
+
+ul#menu a{
+    font-size: 14px;
+    margin:0;
+    padding:0;
+    display: block;
+    position: relative;
+}
+
+
+
+ul#menu ul{
+    margin: 2px 0 0;
+    padding:0;
+    
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 58px;
+    left: 0px;
+    z-index:9999;
+    background: var(--beige);
+}
+
+
+
+
+ul#menu li:hover ul{
+    background: var(--beige);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+ul#menu ul a:hover{
+    
+    color: var(--black);
+}
 
 /* hero sect */
 

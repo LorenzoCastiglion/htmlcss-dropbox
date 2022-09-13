@@ -1,0 +1,163 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --white: white;
+    --lightblue: rgb(181, 208, 232);
+    --black: black;
+    --blu: #0061FF;
+    --grey: #EDEDEE;
+    --azure: #B4D0E7;
+    --bordeaux: #610B2E;
+    --beige: #F5F5F5;
+    --green: #A2D39B;
+    --lightgreen: #D1E9CD;
+    --cyan: #0093CE;
+    --red: #FF1C1C;
+    --darkred: #D5001F;
+    --darkblue: #0D2481;
+    --yellow: #FFD830;
+
+
+}
+
+@font-face {
+    font-family: "eiko";
+    src: url("../fonts/PP\ Eiko\ Medium\ 500.otf")
+}
+
+body {
+    background-color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.smallercontainer{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* header */
+.btn{
+    background-color: var(--blu);
+    border: none;
+    color: var(--white);
+    padding: 5px 8px;
+}
+
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    align-items: center;
+    font-size: 16px;
+    
+    margin: 0 25px;
+}
+
+li:hover{
+    text-decoration: none;
+    background-color: var(--grey);
+    border-bottom: 3px solid var(--black);
+}
+
+.d-flex {
+    display: flex;
+}
+
+#btn-nav{
+    margin-left: 20px ;
+}
+
+header nav ul li{
+    height: 100%;
+    line-height: 60px;
+    
+}
+
+li{
+    list-style: none;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+/* main */
+
+.schedauno{
+    width: 100%;
+    background-color: var(--azure);
+}
+
+
+.flex{
+    display: flex;
+}
+
+/* main end */
+
+/* footer */
+footer {
+    height: 500px;;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+
+.foot-nav{
+    padding-top: 60px;
+    margin-bottom: 100px;
+}
+
+footer ul li:first-child{
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.foot-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.end-foot{
+    text-align: left;
+    width: 10%;
+    border-top: var(--grey);
+    margin: 0 10%;
+    border-top: 1px solid var(--white);
+    padding-top: 3%;
+
+}
+
+footer ul li{
+    padding-top: 10px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    
+}
+
+footer ul li a:visited{
+    color: var(--white);
+    text-decoration: none;
+}
+/* footer end */
