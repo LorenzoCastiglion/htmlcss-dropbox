@@ -489,7 +489,7 @@ h3{
 /* sezione loghi centale */
 
 .logo-central-txt{
-    padding: 3%;
+    height: 30vw;
     overflow-y: auto;
    
 }
@@ -508,6 +508,11 @@ h3{
     margin: 8% 0;
     padding-right: 15%;
     font-size: 14px;
+}
+
+.inner-central-txt{
+    margin: 8%;
+    height: 700px;
 }
 
 /* sezione azzurra */
@@ -541,6 +546,7 @@ h3{
 
 .domande-frequenti h4{
     font-size: 40px ;
+    margin-bottom: 10%;
 }
 
 .shown{
@@ -549,7 +555,7 @@ h3{
 }
 
 .faq{
-    margin: 10% 0 ;
+    
     border-top: 1px solid var(--black);
     border-bottom: 1px solid var(--black);
     padding: 5% 5% 5% 0;
@@ -557,10 +563,10 @@ h3{
 
 .shown:hover + .hidden {
     display: block;
-
+    
 }
 
-.shown:hover + .fa-angle-up {
+.shown:hover i {
     transform: rotate(0deg);
 }
 
@@ -574,6 +580,7 @@ h3{
     display: none;
 }
 
+/* fine main */
 
 /* footer */
 footer {
