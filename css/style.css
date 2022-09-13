@@ -12,6 +12,15 @@
     --azure: #B4D0E7;
     --bordeaux: #610B2E;
     --beige: #F5F5F5;
+    --green: #A2D39B;
+    --lightgreen: #D1E9CD;
+    --cyan: #0093CE;
+    --red: #FF1C1C;
+    --darkred: #D5001F;
+    --darkblue: #0D2481;
+    --yellow: #FFD830;
+
+
 }
 body {
     background-color: var(--white);
@@ -426,12 +435,80 @@ h3{
 }
 
 .logo-inner{
+    position: relative;
     width: 15vw;
     height: 15vw;
-    background-color: #610B2E;
+    
 }
 
+.svg-color{
+    filter: invert(1);
+}
+.logo-container img{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+/* colori bg loghi */
+#designit{
+    background-color: var(--green) ;
+    border: 10px solid var(--lightgreen);
+}
 
+#asu{
+    background-color: var(--bordeaux);
+}
+
+#uf{
+    background-color: var(--cyan);
+}
+
+#topps{
+    background-color: var(--red);
+}
+
+#world{
+    background-color: var(--darkred);
+}
+
+#hearst{
+    background-color: var(--azure);
+}
+
+#lonely{
+    background-color: var(--darkblue) ;
+}
+
+#clear{
+    background-color: var(--yellow);
+}
+
+/* sezione loghi centale */
+
+.logo-central-txt{
+    padding: 3%;
+    overflow-y: auto;
+   
+}
+
+#logo-central{
+    filter: invert(0);
+    width: 40%;
+}
+
+.logo-central-txt hr{
+    width: 25%;
+    margin-top: 8%;
+}
+
+.logo-central-txt p{
+    margin: 8% 0;
+    padding-right: 15%;
+    font-size: 14px;
+}
 
 /* sezione azzurra */
 
@@ -458,6 +535,43 @@ h3{
     background-color: var(--white);
     border: 1px solid var(--white);
     padding: 10px 20px ;
+}
+
+/* domande frequenti */
+
+.domande-frequenti h4{
+    font-size: 40px ;
+}
+
+.shown{
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq{
+    margin: 10% 0 ;
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    padding: 5% 5% 5% 0;
+}
+
+.shown:hover + .hidden {
+    display: block;
+
+}
+
+.shown:hover + .fa-angle-up {
+    transform: rotate(0deg);
+}
+
+.fa-angle-up{
+    transform: rotate(180deg);
+}
+
+
+.hidden{
+    margin-top: 5%;
+    display: none;
 }
 
 
