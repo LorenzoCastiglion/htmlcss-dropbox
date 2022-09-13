@@ -22,6 +22,16 @@
 
 
 }
+
+@font-face {
+    font-family: "eiko";
+    src: url("../fonts/PP\ Eiko\ Medium\ 500.otf")
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: var(--white);
     font-family: Arial, Helvetica, sans-serif;
@@ -69,6 +79,7 @@ header nav {
     bottom: -80px;
 }
 h1 {
+    font-family: 'eiko';
     font-size: 75px;
     margin-bottom: 35px;
 }
@@ -77,12 +88,18 @@ ul{
     align-items: center;
     font-size: 16px;
     
-    margin: 0 10px;
+    margin: 0 25px;
 }
 
 li:hover{
-    text-decoration: underline;
-    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--grey);
+    
+}
+
+header nav ul li{
+    height: 100%;
+    line-height: 60px;
 }
 
 li{
@@ -96,6 +113,8 @@ a:visited{
     color: black;
 }
 
+
+/* hero sect */
 
 .fa-arrow-down{
     font-size: 40px;
@@ -195,33 +214,6 @@ justify-content: space-around;
 }
 
 
-
-
-/* .radio-div {
-    display: flex;
-    height: 50px;
-    margin-left: 10px;
-}
-.circle {
-    
-    background-color: var(--white);
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    vertical-align: middle;
-    margin: 0 10px;
-}
-#checked {
-    margin-left: 10px;
-    border: 5px solid var(--blu);
-}
-#non-checked {
-    border: 3px solid rgb(221, 221, 223);
-}
-.radio-div span {
-    line-height: 50px;
-} */
-
 .card-hr{
     margin-right: 82%;
     
@@ -272,6 +264,7 @@ justify-content: space-around;
 }
 
 .card h4{
+    font-family: 'eiko';
     font-size: 25px;
 }
 
@@ -287,8 +280,6 @@ justify-content: space-around;
 .icone-carte{
     margin-right: 8px;
 }
-
-
 
 
 .flex-icon{
@@ -330,8 +321,12 @@ justify-content: space-around;
     justify-content: space-between;
     row-gap: 40px;
 }
+h2{
+    font-family: 'eiko';
+}
 
 h3{
+    font-family: 'eiko';
     margin-right: 20px;
 }
 
@@ -383,6 +378,7 @@ h3{
 }
 
 .photo-txt-flex h4{
+    font-family: 'eiko';
     font-size: 24px;
 }
 
@@ -410,6 +406,7 @@ h3{
 /* fine sezione foto testo */
 
 #cinque{
+    font-family: 'eiko';
     font-size: 40px;
     margin-bottom: 8%;
 }
@@ -511,8 +508,9 @@ h3{
 }
 
 .inner-central-txt{
-    margin: 8%;
-    height: 700px;
+    margin: 10%;
+    height: 100vh;
+    
 }
 
 /* sezione azzurra */
@@ -526,11 +524,14 @@ h3{
     padding: 100px 0;
     display: flex;
     justify-content: space-between;
-    margin:auto
+    margin:auto;
+    min-width: 660px;
+    
     
 }
 
 .blocco-azzurro-flex h4{
+    font-family: 'eiko';
     font-size: 30px;
     color: var(--bordeaux) ;
 }
@@ -545,6 +546,8 @@ h3{
 /* domande frequenti */
 
 .domande-frequenti h4{
+
+    font-family: 'eiko';
     font-size: 40px ;
     margin-bottom: 10%;
 }
@@ -559,15 +562,20 @@ h3{
     border-top: 1px solid var(--black);
     border-bottom: 1px solid var(--black);
     padding: 5% 5% 5% 0;
+    
 }
 
-.shown:hover + .hidden {
+.faq:hover .hidden {
     display: block;
     
 }
 
-.shown:hover i {
+.faq:hover i {
     transform: rotate(0deg);
+}
+
+.faq:hover{
+    background-color: rgb(241, 234, 224);
 }
 
 .fa-angle-up{
@@ -611,7 +619,9 @@ footer ul li:first-child{
     text-align: left;
     width: 10%;
     border-top: var(--grey);
-    margin: 0 0;
+    margin: 0 170px;
+    border-top: 1px solid var(--white);
+    padding-top: 3%;
 
 }
 
@@ -619,7 +629,21 @@ footer ul li{
     padding-top: 10px;
 }
 
+footer ul li a{
+    text-decoration: none;
+    
+}
+
 footer ul li a:visited{
     color: var(--white);
     text-decoration: none;
+}
+
+/* fine footer */
+
+/* animazioni */
+
+.btn:hover{
+    box-shadow: inset 20px 20px 60px #0052d9,
+            inset -20px -20px 60px #0070ff;
 }
