@@ -161,6 +161,7 @@ ul#menu ul{
 
 
 ul#menu li:hover ul{
+    width: 200px;
     background: var(--beige);
     opacity: 1;
     visibility: visible;
