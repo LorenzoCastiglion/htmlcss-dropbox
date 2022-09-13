@@ -94,23 +94,37 @@ ul{
 li:hover{
     text-decoration: none;
     background-color: var(--grey);
+    border-bottom: 3px solid var(--black);
+
     
+}
+
+#btn-nav{
+    margin-left: 20px ;
 }
 
 header nav ul li{
     height: 100%;
     line-height: 60px;
+    
 }
 
 li{
     list-style: none;
-    align-items: center;
-    margin-left: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 a:visited{
     text-decoration: none;
     color: black;
+}
+
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+   
 }
 
 
