@@ -28,9 +28,9 @@
     src: url("../fonts/PP\ Eiko\ Medium\ 500.otf")
 }
 
-html {
+html{
     scroll-behavior: smooth;
-  }
+}
 
 body {
     background-color: var(--white);
@@ -56,6 +56,7 @@ header nav {
     left: 0;
     z-index: 500;
     background-color: var(--white);
+   
 }
 
 .btn{
@@ -87,8 +88,7 @@ h1 {
 ul{
     align-items: center;
     font-size: 16px;
-    
-    margin: 0 25px;
+    margin: 0 1%;
 }
 
 li:hover{
@@ -213,6 +213,8 @@ ul#menu ul a:hover{
 /* fine header */
 
 /* inizio main */
+
+
 
 .flex-cards{
 display: flex;
@@ -512,6 +514,9 @@ h3{
 /* colori bg loghi */
 #designit{
     background-color: var(--green) ;
+}
+
+#designit:hover{
     border: 10px solid var(--lightgreen);
 }
 
@@ -519,36 +524,63 @@ h3{
     background-color: var(--bordeaux);
 }
 
+#asu:hover{
+    border: 10px solid  #b71858;
+}
+
 #uf{
     background-color: var(--cyan);
+}
+
+#uf:hover{
+    border: 10px solid  #27befa;
 }
 
 #topps{
     background-color: var(--red);
 }
 
+#topps:hover{
+    border: 10px solid  #ff6e6e;
+}
+
 #world{
     background-color: var(--darkred);
+}
+
+#world:hover{
+    border: 10px solid  #f84646;
 }
 
 #hearst{
     background-color: var(--azure);
 }
 
+#hearst:hover{
+    border: 10px solid  #d8e5f0;
+}
+
 #lonely{
     background-color: var(--darkblue) ;
+}
+
+#lonely:hover{
+    border: 10px solid  #2348dd;
 }
 
 #clear{
     background-color: var(--yellow);
 }
 
+#clear:hover{
+    border: 10px solid  #fff0af;
+}
+
 /* sezione loghi centale */
 
 .logo-central-txt{
     height: 30vw;
-    overflow-y: auto;
-   
+    overflow-y: auto; 
 }
 
 #logo-central{
@@ -569,8 +601,17 @@ h3{
 
 .inner-central-txt{
     margin: 10%;
-    height: 100vh;
+    height: calc(100vh + 200px);
     
+}
+
+#firma{
+    
+    padding-bottom: 100px;
+}
+
+#asuni img{
+    width: 35%;
 }
 
 /* sezione azzurra */
@@ -635,7 +676,7 @@ h3{
 }
 
 .faq:hover{
-    background-color: rgb(241, 234, 224);
+    background-color: var(--beige);
 }
 
 .fa-angle-up{
