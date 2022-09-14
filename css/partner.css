@@ -137,15 +137,20 @@ footer ul li:first-child{
     justify-content: space-between;
 }
 
-.end-foot{
-    text-align: left;
-    width: 10%;
-    border-top: var(--grey);
-    margin: 0 10%;
-    border-top: 1px solid var(--white);
-    padding-top: 3%;
-
+footer section div {
+    display: inline-block;
+    border-top: 1px solid white;
+    color: var(--langgray);
+    padding: 30px 0;
 }
+footer select {
+    background-color: var(--black);
+    color: var(--grey);
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+}
+
 
 footer ul li{
     padding-top: 10px;

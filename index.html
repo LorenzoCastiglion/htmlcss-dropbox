@@ -16,7 +16,7 @@
 
     <header>
         <!-- fixed 100% -->
-        <nav class="nav-flex dropdown">
+        <nav id="navbar" class="nav-flex dropdown">
 
             <ul id="menu" class="d-flex">
 
@@ -398,13 +398,13 @@
                         <img class="svg-color" src="./img/designit.svg" alt="">
                     </div>
                     <div id="asu" class="logo-inner">
-                        <a href="#asuni"><img class="svg-color" src="./img/arizona_state_university.svg" alt=""></a>
+                        <a href="#asu-central"><img class="svg-color" src="./img/arizona_state_university.svg" alt=""></a>
                     </div>
                     <div id="uf" class="logo-inner">
                         <img class="svg-color" src="./img/university_of_florida.svg" alt="">
                     </div>
                     <div id="topps" class="logo-inner">
-                        <img class="svg-color" src="./img/topps.svg" alt="">
+                        <a href="#topps-central"><img class="svg-color" src="./img/topps.svg" alt=""></a>
                     </div>
                 </div>
 
@@ -427,7 +427,7 @@
                         </div>
 
                         
-                        <div id="asuni" class="company-statement">
+                        <div id="asu-central" class="company-statement">
                             <img id="logo-central" class="svg-color" src="./img/arizona_state_university.svg" alt="">
 
 
@@ -441,7 +441,7 @@
                             <p id="firma">Dr.Tortem Mhomsen, Head of Faculty</p>
                         </div>
 
-                        <div class="company-statement">
+                        <div id="topps-central" class="company-statement">
                             <img id="logo-central" class="svg-color" src="./img/topps.svg" alt="">
 
 
@@ -625,13 +625,17 @@
 
 
 
-        <div class="end-foot smallercontainer">
+        <section class="container">
             <div>
-                <i class="fa-solid fa-earth-americas"></i>
-                Italiano<i class="fa-solid fa-caret-up"></i>
+                <label for="lang"><i class="fa-solid fa-globe"></i></label>
+                <select name="lang" id="">
+                    <option value="">Italiano</option>
+                <option value="">English</option>
+                <option value="">Francais</option>
+                <option value="">Detusch</option>
+                </select>
             </div>
-
-        </div>
+    </section>
 
     </footer>
 </body>
