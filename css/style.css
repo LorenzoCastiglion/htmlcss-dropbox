@@ -61,6 +61,11 @@ header nav {
    
 }
 
+header nav ul li a{
+    text-decoration: none;
+      
+  }
+
 .btn{
     background-color: var(--blu);
     border: none;
@@ -146,9 +151,8 @@ ul#menu a{
 
 
 ul#menu ul{
-    margin: 5px 0 0;
+    margin: 3px 0 0;
     padding:0;
-    
     list-style: none;
     opacity: 0;
     visibility: hidden;
@@ -618,6 +622,8 @@ h3{
 #asuni img{
     width: 35%;
 }
+
+
 
 /* sezione azzurra */
 

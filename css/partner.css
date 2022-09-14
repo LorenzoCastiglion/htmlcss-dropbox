@@ -87,6 +87,11 @@ header nav ul li{
     
 }
 
+header nav ul li a{
+  text-decoration: none;
+    
+}
+
 li{
     list-style: none;
     padding-right: 20px;
