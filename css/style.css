@@ -146,7 +146,7 @@ ul#menu a{
 
 
 ul#menu ul{
-    margin: 2px 0 0;
+    margin: 5px 0 0;
     padding:0;
     
     list-style: none;
@@ -163,13 +163,16 @@ ul#menu ul{
 
 
 ul#menu li:hover ul{
-    width: 200px;
+    width: 150%;
     background: var(--beige);
     opacity: 1;
     visibility: visible;
 }
 
-
+header nav ul li:hover{
+    background: var(--beige);
+    border-bottom: 2px solid var(--black);
+}
 
 ul#menu ul a:hover{
     
@@ -739,6 +742,7 @@ footer section div {
     border-top: 1px solid white;
     color: var(--langgray);
     padding: 30px 0;
+    margin-left: 25px;
 }
 footer select {
     background-color: var(--black);

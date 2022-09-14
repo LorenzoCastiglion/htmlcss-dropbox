@@ -67,11 +67,7 @@ ul{
     margin: 0 25px;
 }
 
-li:hover{
-    text-decoration: none;
-    background-color: var(--grey);
-    border-bottom: 3px solid var(--black);
-}
+
 
 .d-flex {
     display: flex;
@@ -98,16 +94,108 @@ a:visited{
     color: black;
 }
 
+ul#menu li{
+    display: block;
+    position: relative;
+}
+
+
+ul#menu a{
+    font-size: 14px;
+    margin:0;
+    padding:0;
+    display: block;
+    position: relative;
+}
+
+
+
+ul#menu ul{
+    margin: 5px 0 0;
+    padding:0;
+    
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 58px;
+    left: 0px;
+    z-index:9999;
+    background: var(--beige);
+}
+
+
+header nav ul li:hover{
+    background: var(--beige);
+    border-bottom: 2px solid var(--black);
+}
+
+
+ul#menu li:hover ul{
+    width: 140%;
+    background: var(--beige);
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+
+
+ul#menu ul a:hover{
+    
+    color: var(--black);
+}
+
 /* main */
+
+h1{
+    font-family: "eiko";
+    color: var(--bordeaux);
+}
+
+.flex p{
+    margin: 15% 0;
+}
+
+.flex a:visited{
+    color: var(--black);
+}
+
+.flex a{
+    border: 1px solid var(--grey);
+    background-color: var(--white);
+    text-decoration: none;
+    color: var(--black);
+    padding: 2% 8%;
+}
 
 .schedauno{
     width: 100%;
     background-color: var(--azure);
 }
 
+.pic{
+    flex-basis: 50%;
+}
+
+.txt{
+    flex-basis: 45%;
+}
+
+.img-scheda{
+    width: 120%;
+}
+
 
 .flex{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+    align-items: center;
     display: flex;
+    padding: 8%;
+    justify-content: space-between;
 }
 
 /* main end */
@@ -142,6 +230,7 @@ footer section div {
     border-top: 1px solid white;
     color: var(--langgray);
     padding: 30px 0;
+    margin-left: 25px;
 }
 footer select {
     background-color: var(--black);
